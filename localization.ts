@@ -1,0 +1,97 @@
+
+export const translations: { [key: string]: { [key: string]: string } } = {
+  en: {
+    // API Key
+    apiKeyLabel: 'Google AI API Key (Optional)',
+    apiKeyPlaceholder: 'Enter your API key here to override the default',
+    apiKeyMissingError: 'API Key is missing. Please provide an API key to proceed.',
+    // Main UI
+    promptLabel: 'Prompt',
+    clearButton: 'Clear',
+    enhanceButton: 'Enhance',
+    enhancingButton: 'Enhancing...',
+    promptPlaceholder: 'A breathtaking close-up shot of...',
+    promptTip: 'Tip: You can also use a JSON prompt for advanced controls.',
+    referenceImageLabel: 'Reference Image (Optional)',
+    uploadImage: 'Upload Image',
+    selectModelLabel: 'Select Model',
+    aspectRatioLabel: 'Aspect Ratio',
+    landscape: 'Landscape',
+    portrait: 'Portrait',
+    generateButton: 'Generate',
+    // Result Screen
+    videoReadyTitle: 'Your Video is Ready!',
+    createAnotherButton: 'Create Another Video',
+    downloadButton: 'Download',
+    // Loading Messages
+    generatingVideoTitle: 'Generating Video...',
+    progressWarmingUp: "Warming up the creative engines...",
+    progressConceptualizing: "Conceptualizing the visual narrative...",
+    progressAssembling: "Assembling pixels into a masterpiece...",
+    progressRendering: "Rendering the initial scenes...",
+    progressEnhancing: "Enhancing visual fidelity...",
+    progressFinalTouches: "Almost there, adding the final touches...",
+    progressVEO3TwoStep: "VEO 3 Portrait: Starting two-step generation.",
+    progressVEO3Step1: "Step 1/2: Creating an optimized image prompt...",
+    progressVEO3Step1b: "Step 1/2: Generating a reference image...",
+    progressVEO3Step2: "Step 2/2: Starting video generation with the new image...",
+    progressInitializing: "Initializing video generation... This can take a few minutes.",
+    progressDownloading: "Your video is ready! Downloading...",
+    // Warnings & Errors
+    veo3Warning: "VEO 3 Portrait uses a 2-step process. Complex prompts may yield unexpected results.",
+    enhanceEmptyWarning: "Please enter a prompt to enhance.",
+    enhanceError: "Failed to enhance prompt.",
+    promptEmptyError: "Prompt cannot be empty.",
+    promptJsonEmptyError: "Prompt cannot be empty, even within a JSON object.",
+    generationError: "An unknown error occurred during video generation.",
+    // System Instructions
+    enhanceSystemInstruction: "You are an expert prompt engineer for a text-to-video generation model. Your task is to take a user's prompt and rewrite it into a highly descriptive, cinematic video prompt. Add details on camera work (shots, angles, movement), lighting, atmosphere, and mood. Then, create a concise but evocative prompt for sound effects and ambient audio that would accompany the video. The final output must be in English. The output must be ONLY a valid JSON object with two keys: `videoPrompt` for the cinematic video prompt and `soundPrompt` for the sound effects prompt. Do not add any preamble, explanation, or markdown formatting.",
+  },
+  id: {
+    // API Key
+    apiKeyLabel: 'Kunci API Google AI (Opsional)',
+    apiKeyPlaceholder: 'Masukkan kunci API Anda di sini untuk mengganti default',
+    apiKeyMissingError: 'Kunci API tidak ditemukan. Harap berikan kunci API untuk melanjutkan.',
+    // Main UI
+    promptLabel: 'Prompt',
+    clearButton: 'Bersihkan',
+    enhanceButton: 'Tingkatkan',
+    enhancingButton: 'Meningkatkan...',
+    promptPlaceholder: 'Sebuah bidikan close-up yang menakjubkan dari...',
+    promptTip: 'Tips: Anda juga dapat menggunakan perintah JSON untuk kontrol lanjutan.',
+    referenceImageLabel: 'Gambar Referensi (Opsional)',
+    uploadImage: 'Unggah Gambar',
+    selectModelLabel: 'Pilih Model',
+    aspectRatioLabel: 'Rasio Aspek',
+    landscape: 'Lanskap',
+    portrait: 'Potret',
+    generateButton: 'Hasilkan',
+    // Result Screen
+    videoReadyTitle: 'Video Anda Sudah Siap!',
+    createAnotherButton: 'Buat Video Lain',
+    downloadButton: 'Unduh',
+    // Loading Messages
+    generatingVideoTitle: 'Menghasilkan Video...',
+    progressWarmingUp: "Memanaskan mesin kreatif...",
+    progressConceptualizing: "Mengonsep narasi visual...",
+    progressAssembling: "Menyusun piksel menjadi sebuah mahakarya...",
+    progressRendering: "Merender adegan awal...",
+    progressEnhancing: "Meningkatkan ketajaman visual...",
+    progressFinalTouches: "Hampir selesai, menambahkan sentuhan akhir...",
+    progressVEO3TwoStep: "Potret VEO 3: Memulai pembuatan dua langkah.",
+    progressVEO3Step1: "Langkah 1/2: Membuat prompt gambar yang dioptimalkan...",
+    progressVEO3Step1b: "Langkah 1/2: Menghasilkan gambar referensi...",
+    progressVEO3Step2: "Langkah 2/2: Memulai pembuatan video dengan gambar baru...",
+    progressInitializing: "Memulai pembuatan video... Ini bisa memakan waktu beberapa menit.",
+    progressDownloading: "Video Anda sudah siap! Mengunduh...",
+    // Warnings & Errors
+    veo3Warning: "Potret VEO 3 menggunakan proses 2 langkah. Prompt yang rumit mungkin memberikan hasil yang tidak terduga.",
+    enhanceEmptyWarning: "Silakan masukkan prompt untuk ditingkatkan.",
+    enhanceError: "Gagal meningkatkan prompt.",
+    promptEmptyError: "Prompt tidak boleh kosong.",
+    promptJsonEmptyError: "Prompt tidak boleh kosong, bahkan di dalam objek JSON.",
+    generationError: "Terjadi kesalahan yang tidak diketahui saat pembuatan video.",
+    // System Instructions
+    enhanceSystemInstruction: "Anda adalah seorang ahli rekayasa prompt untuk model pembuatan video dari teks. Tugas Anda adalah mengambil prompt pengguna dan menulis ulangnya menjadi prompt video sinematik yang sangat deskriptif. Tambahkan detail tentang pergerakan kamera (bidikan, sudut, gerakan), pencahayaan, suasana, dan nuansa. Kemudian, buatlah prompt yang ringkas namun menggugah untuk efek suara dan audio ambien yang akan menyertai video. Output akhir harus dalam Bahasa Indonesia. Output harus HANYA berupa objek JSON yang valid dengan dua kunci: `videoPrompt` untuk prompt video sinematik dan `soundPrompt` untuk prompt efek suara. Jangan tambahkan pembukaan, penjelasan, atau format markdown apa pun.",
+  }
+};
